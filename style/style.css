@@ -144,3 +144,65 @@ footer {
 footer img {
 	width: 40px;
 }
+
+:focus {
+	outline: none;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	color: white;
+	border-radius: 50%;
+}
+
+.circle p {
+    padding: 38px 11px;
+		transition: 3s;
+}
+
+.circle:hover {
+	animation: rotate-icon 3s linear;
+	background: blue;
+}
+
+label.label_input_wrap {
+    vertical-align: top;
+    display: block;
+}
+
+input,
+textarea {
+    border: 1px solid black;
+		padding: 9px 11px;
+}
+
+input[type="submit"] {
+    padding: 6px 52px;
+    background: #333;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    border: none;
+}
+
+form#test_form div {
+    margin: 12px 0px;
+}
+
+@keyframes rotate-icon {
+	0% {
+		transform: rotateX(0deg);
+		background: red;
+	}
+
+	50% {
+		transform: rotateX(-180deg);
+		background: yellow;
+	}
+
+	100% {
+		transform: rotateX(0deg);
+		background: blue;
+	}
+}
